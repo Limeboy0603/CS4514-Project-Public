@@ -1,6 +1,6 @@
 # System Requirements and Setup Instructions
 
-For real time usage, you will need a **30 FPS webcam** to use the software. If necessary, you may use OBS's virtual camera feature with lowered output FPS. If you feel like so, you can also skip this step and use pre-recorded videos instead, which you can set in config file. (see below)
+For real time usage, you will need a **30 FPS webcam** to use the software. If necessary, you may use OBS's virtual camera feature with lowered output FPS. If you feel like so, you can also skip this step and use pre-recorded videos instead, which you can set in config file.
 
 You can run this on any OS with python3 installed. Simply install all dependencies. It is highly recommended that you create a virtual environment first.
 
