@@ -1,0 +1,8 @@
+type: # provided | mediapipe
+keypoint_dir: E:\\dataset\\tvb-hksl-news\\keypoints
+word_dict_path: data/word_dict_train.json
+model_path: models/???/???.keras
+encoder_path: models/???/???_encoder.keras
+decoder_path: models/???/???_decoder.keras
+checkpoint_path: models/???/checkpoint/???.keras
+train_file: E:\\dataset\\tvb-hksl-news\\split\\train.csv

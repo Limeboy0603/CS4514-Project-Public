@@ -1,0 +1,12 @@
+services:
+  sign2gloss:
+    context: ./
+    build: ./Docker/sign2gloss
+    ports:
+      - "5000:5000"
+
+  gloss2sentence:
+    context: ./
+    build: ./Docker/gloss2sentence
+    ports:
+      - "5001:5000"

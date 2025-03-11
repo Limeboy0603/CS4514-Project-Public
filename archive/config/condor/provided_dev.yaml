@@ -1,0 +1,10 @@
+type: provided
+keypoint_dir: tvb-hksl-news/keypoints
+word_dict_path: data/word_dict_dev.json
+model_path: models/provided_dev/tvb_hksl_dev_128_322_256.keras
+encoder_path: models/provided_dev/tvb_hksl_dev_encoder_128_322_256.keras
+decoder_path: models/provided_dev/tvb_hksl_dev_decoder_128_322_256.keras
+checkpoint_path: models/provided_dev/checkpoint/tvb_hksl_dev_128_322_256.keras
+train_file: tvb-hksl-news/split/dev.csv
+test_file: tvb-hksl-news/split/test.csv
+cache_dir: tvb-hksl-news/cache/provided_dev

@@ -1,0 +1,78 @@
+capture:
+  # METHOD 1:
+  # Set source to the ID of the camera
+  # Windows: Get-CimInstance Win32_PnPEntity | ? { $_.service -eq "usbvideo" } | Select-Object -Property PNPDeviceID, Name
+  # Linux: ls /dev/video*
+  # MacOS: system_profiler SPCameraDataType
+  # source: 0
+
+  # METHOD 2:
+  # Set the path of a testing video
+  source: dataset/minified_3_fixed/full_test/final.avi
+
+  # Set the resolution of the capture
+  # Format: {width}x{height}
+  resolution: 1920x1080
+
+paths:
+  # Set model path
+  model: models/final.keras
+
+  # Set keypoint saved path. Should be a directory.
+  keypoints: dataset/minified_3_fixed/keypoints
+
+  # Set model checkpoint path. Should be a file.
+  model_checkpoint: model_checkpoint/model_checkpoint.keras
+
+  # Set the path to dataset. 
+  # In the dataset, each directory should be a class
+  # Each class contains image samples
+  dataset: dataset/minified_3_fixed/clips
+
+  # Set the path to keypoints after perfornming train_test_split
+  # Directory structure:
+  # split
+  # |--test
+  # |--train
+  # |--val
+  split: dataset/minified_3_fixed/split
+
+  # Set the directory name to store the language model and it's training result
+  llm: llm
+
+
+# The following settings are only for capturing via webcam
+
+# Define the class samples to record using cam_capture.py
+dictionary:
+  # - "#DEMO" # the gloss for demonstration capturing program
+  - "#BLANK"
+  - Hello
+  - Me
+  - English
+  - Name
+  - D
+  - I
+  - C
+  - K
+
+sequence:
+  # Set the number of frames to capture for each gesture
+  frame: 30
+
+  # Set the number of samples for each gesture
+  count: 30
+
+
+# The following settings are only for training the LLM
+llm_samples:
+  - hksl: Hello Me English Name D I C K
+    natural: Hello, my English name is Dick.
+  - hksl: Hello D I C K
+    natural: Hello, Dick.
+  - hksl: Hello Me English Name D E R E K
+    natural: Hello, my English name is Derek.
+  - hksl: Hello Me English Name D I C K S O N
+    natural: Hello, my English name is Dickson.
+  - hksl: Hello Me English Name R I C K
+    natural: Hello, my English name is Rick.

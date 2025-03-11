@@ -1,0 +1,47 @@
+capture:
+  # Set source to the ID of the camera
+  # Windows: Get-CimInstance Win32_PnPEntity | ? { $_.service -eq "usbvideo" } | Select-Object -Property PNPDeviceID, Name
+  # Mac/Linux: ls /dev/video*
+  # Use 0 for the system default camera
+  source: 0
+
+  # Set the resolution of the capture
+  # Format: {width}x{height}
+  resolution: 1920x1080
+
+paths:
+  # Set model path
+  model: models/test1.keras
+  # model: model_checkpoint/model_checkpoint.keras
+
+  # Set keypoint saved path. Should be a directory.
+  keypoints: F:\\dataset\\minified\\keypoints
+
+  # Set model checkpoint path. Should be a file.
+  model_checkpoint: model_checkpoint/model_checkpoint.keras
+
+  # Set the path to dataset. 
+  # In the dataset, each directory should be a class
+  # Each class contains video samples
+  dataset: F:\\dataset\\minified\\video
+
+
+# The following settings are only for capturing via webcam
+
+# Define the class samples to record using cam_capture.py
+dictionary:
+  - C
+  - D
+  - English
+  - I
+  - K
+  - Hello
+  - Me
+  - Name
+
+sequence:
+  # Set the number of frames to capture for each gesture
+  frame: 30
+
+  # Set the number of samples for each gesture
+  count: 10

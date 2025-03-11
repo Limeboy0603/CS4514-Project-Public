@@ -1,0 +1,11 @@
+labels:
+- X
+- "\u4E0D\u597D"
+- "\u4E0D\u61C2"
+- "\u4F60\u597D\u55CE"
+- "\u5348\u9910"
+- "\u591A\u8B1D"
+- "\u597D"
+- "\u5C0D\u4E0D\u8D77"
+- "\u6D17\u624B\u9593"
+seq_max_len: 72

@@ -1,0 +1,12 @@
+executable = /usr/bin/python3
+arguments = src/train.py --config config/condor/provided_train.yaml
+
+requirements = (CUDADeviceName == "Tesla V100-PCIE-32GB")
+request_GPUs = 1
+should_transfer_files = YES
+
+error = condor/train.err
+log = condor/train.log
+
+output = condor/output.log
+queue

@@ -1,0 +1,10 @@
+type: mediapipe
+keypoint_dir: tvb-hksl-news/keypoints_mediapipe
+word_dict_path: data/word_dict_dev.json
+model_path: models/mediapipe_dev/tvb_hksl_dev_mediapipe.keras
+encoder_path: models/mediapipe_dev/tvb_hksl_dev_encoder_mediapipe.keras
+decoder_path: models/mediapipe_dev/tvb_hksl_dev_decoder_mediapipe.keras
+checkpoint_path: models/mediapipe_dev/checkpoint/tvb_hksl_dev_mediapipe.keras
+train_file: tvb-hksl-news/split/dev.csv
+test_file: tvb-hksl-news/split/test.csv
+cache_dir: tvb-hksl-news/cache/mediapipe_dev

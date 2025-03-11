@@ -1,0 +1,25 @@
+keypoints/*
+
+# too large for upload to git
+model/*
+models/*
+model_checkpoint/*
+llm/*
+llm2/*
+
+src/__pycache__/*
+utils/openpose/*
+utils/youtube-dl.exe
+
+archive/src_old/lstm_test_kp/*
+archive/llm/*
+
+# for files on condor server / wsl
+tvb-hksl-news/*
+cache/*
+dataset/*
+
+.venv*/*
+
+src_*/__pycache__
+archive/model/*

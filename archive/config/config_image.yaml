@@ -1,0 +1,42 @@
+capture:
+  # Set source to the ID of the camera
+  # Windows: Get-CimInstance Win32_PnPEntity | ? { $_.service -eq "usbvideo" } | Select-Object -Property PNPDeviceID, Name
+  # Mac/Linux: ls /dev/video*
+  # Use 0 for the system default camera
+  source: 0
+
+  # Set the resolution of the capture
+  # Format: {width}x{height}
+  resolution: 1920x1080
+
+paths:
+  # Set model path
+  model: models/test4_weighted.keras
+  # model: model_checkpoint/model_checkpoint.keras
+
+  # Set keypoint saved path. Should be a directory.
+  keypoints: F:\\dataset\\minified_2\\keypoints
+
+  # Set model checkpoint path. Should be a file.
+  model_checkpoint: model_checkpoint/model_checkpoint.keras
+
+  # Set the path to dataset. 
+  # In the dataset, each directory should be a class
+  # Each class contains image samples
+  dataset: F:\\dataset\\minified_2\\images
+
+
+# Define the class samples to record using cam_capture.py
+dictionary:
+  - BLANK
+  - Hello
+  - Me
+  - English
+  - Name
+  - D
+  - I
+  - C
+  - K
+
+# You may manually add samples on your own
+# While training, the code will automatically read all directory names as classes

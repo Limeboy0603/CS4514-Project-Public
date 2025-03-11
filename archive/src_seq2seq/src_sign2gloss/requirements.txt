@@ -1,0 +1,12 @@
+tensorflow[and-cuda]
+pandas
+numpy
+alive-progress
+keras
+mediapipe
+opencv-python
+ipykernel
+jupyter
+tk
+easygui
+flask
