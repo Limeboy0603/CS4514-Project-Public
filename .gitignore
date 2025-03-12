@@ -24,4 +24,5 @@ dataset/*
 src_*/__pycache__
 archive/model/*
 
-CS4514-project-src*/*
+CS4514-project-src/*
+CS4514-project-src.zip
