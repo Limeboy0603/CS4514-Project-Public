@@ -4,6 +4,8 @@ This project aims to continuously recognize Hong Kong sign language and translat
 - A LSTM model for sign language recognition
 - A language model for translation from glosses to sentences
 
-For more information, read the documenation in `docs`.
+To set up the project, follow the instructions in `docs/setup.md`.
 
-If you are interested in seeing my old work regarding this project, check out `archive`.
+Aftewards, modify your config file if needed. Refer to `docs/config.md`.
+
+For usage, refer to `docs/usage.md`
