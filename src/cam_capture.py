@@ -22,7 +22,7 @@ def main(config_path: str, demo: bool = False):
         frame_count = 0
         for label in labels:
             os.makedirs(os.path.join(config.paths.dataset, label), exist_ok=True)
-            for sequence in range(70, config.sequence.count):
+            for sequence in range(config.sequence.count):
                 frames = []
                 video_path = os.path.join(config.paths.dataset, label, f"{sequence}.avi")
                 if not demo:

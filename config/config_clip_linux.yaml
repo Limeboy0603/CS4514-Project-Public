@@ -61,7 +61,7 @@ sequence:
   frame: 30
 
   # Set the number of samples for each gesture
-  count: 30
+  count: 100
 
 
 # The following settings are only for training the LLM
