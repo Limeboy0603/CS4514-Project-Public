@@ -52,7 +52,7 @@ python3 src/!FULL.py --config $PATH_TO_CONFIG_FILE
 # By default, if you do not include --config, it will use config/config_clip.yaml for windows and config/config_clip_linux.yaml on linux/MacOS
 
 # Here are some other flags you can use. 
-# --capture: Capture glosses in dataset based on whatever you set in your config file. If you copied the dataset from the gateway server, do NOT include this arguement.
+# --capture: Capture glosses in dataset based on whatever you set in your config file. If you copied the dataset from the gateway server, do NOT include this arguement. Otherwise, you may use this flag to capture your own dataset.
 # --extractsplit: Perform feature extraction and splitting. If you copied the dataset from the gateway server, do NOT include this arguement.
 # --use: Use the model directly after building everything. The video source will depend on what you set in your config file.
 ```
